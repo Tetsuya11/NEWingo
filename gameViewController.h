@@ -7,35 +7,33 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "game2Viewcontroller.h"
 
 
 @interface gameViewController : UIViewController{
 
 }
 
-@property (weak, nonatomic) IBOutlet UILabel *myLabel;
+@property (weak, nonatomic) IBOutlet UILabel *counterLabel;
 
-@property (weak, nonatomic) IBOutlet UIImageView *myImage;
+@property (weak, nonatomic) IBOutlet UILabel *totalNumberLabel;
+@property (weak, nonatomic) IBOutlet UILabel *questionLabel;
 
-@property (weak, nonatomic) IBOutlet UIButton *select1;
-- (IBAction)selectBtn1:(id)sender;//これが正解
+@property (weak, nonatomic) IBOutlet UIButton *answerAButton;
+- (IBAction)tapABtn:(id)sender;
 
-@property (weak, nonatomic) IBOutlet UIButton *select2;
-- (IBAction)selectBtn2:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *answerBButton;
+- (IBAction)tapBBtn:(id)sender;
 
-@property (weak, nonatomic) IBOutlet UIButton *select3;
-- (IBAction)selectBtn3:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *answerCButton;
+- (IBAction)tapCBtn:(id)sender;
 
-@property (weak, nonatomic) IBOutlet UIButton *select4;
-- (IBAction)selectBtn4:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *answerDButton;
+- (IBAction)tapDBtn:(id)sender;
 
+@property (weak, nonatomic) IBOutlet UILabel *correctAnswerLabel;
 
-
-@property (weak, nonatomic) IBOutlet UILabel *myCorect;
-
-@property (weak, nonatomic) IBOutlet UILabel *myFault;
-
-@property (weak, nonatomic) IBOutlet UILabel *myTotal;
-
+@property (weak, nonatomic) IBOutlet UILabel *incorrectAnswerLabel;
 
 @end
+
